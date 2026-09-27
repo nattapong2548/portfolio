@@ -5,7 +5,7 @@ export const profile = {
   year: 'Third-year student',
   university: 'Rajamangala University of Technology Krungthep',
   universityThai: 'มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ',
-  gpa: '3.58',
+  gpa: '3.50',
   email: 'pcsb2548@gmail.com', github: 'https://github.com/nattapong2548', linkedin: null, resume: 'nattapong-resume.pdf',
   introduction: 'I connect a foundation in computer engineering with hands-on web projects and a curiosity for AI. Now preparing for a Software Engineering Internship.',
   about: 'I’m a third-year Computer Engineering / IoT student at Rajamangala University of Technology Krungthep. I enjoy breaking problems into smaller parts, learning new technologies, and turning ideas into software projects.',

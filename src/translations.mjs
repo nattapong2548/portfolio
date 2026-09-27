@@ -31,7 +31,6 @@ export const translations = {
   "/ Internet of Things": "/ อินเทอร์เน็ตของสรรพสิ่ง",
   "Year 3": "ปี 3",
   "Current study year": "ชั้นปีปัจจุบัน",
-  "GPA · user-provided": "GPA · ข้อมูลจากผู้ใช้",
   "Your photo belongs here": "พื้นที่สำหรับรูปของคุณ",
   "Choose profile photo": "เลือกรูปโปรไฟล์",
   "Remove photo": "ลบรูป",
@@ -140,5 +139,9 @@ export const translations = {
   "Search and filters": "การค้นหาและตัวกรอง",
   "Changed the expense list to use updated server data instead of retaining a stale local copy.": "ปรับรายการรายจ่ายให้ใช้ข้อมูลล่าสุดจากเซิร์ฟเวอร์ แทนการค้างอยู่กับสำเนาข้อมูลเก่าในหน้าเว็บ",
   "Mobile layout": "หน้าจอบนมือถือ",
-  "Added a card-based expense list on small screens, keeping the table for larger screens.": "เพิ่มรายการแบบการ์ดสำหรับจอเล็ก และคงตารางไว้สำหรับจอขนาดใหญ่"
+  "Added a card-based expense list on small screens, keeping the table for larger screens.": "เพิ่มรายการแบบการ์ดสำหรับจอเล็ก และคงตารางไว้สำหรับจอขนาดใหญ่",
+  "Cumulative GPA / 4.00": "GPA สะสม / 4.00",
+  "Through semester 2/2025 · 74 credits earned": "ข้อมูลถึงภาคเรียน 2/2025 · หน่วยกิตสะสม 74 หน่วยกิต",
+  "Semester 2/2025 GPA: 3.81 · Semester 1/2026 results pending": "เกรดภาคเรียน 2/2025: 3.81 · ภาคเรียน 1/2026 อยู่ระหว่างรอผล",
+  "Relevant coursework: Software Engineering, Database Management Systems and Data Mining, Web Applications Design and Development, Operating Systems, and Computer Architecture and Organization.": "รายวิชาที่เกี่ยวข้อง: วิศวกรรมซอฟต์แวร์ ระบบจัดการฐานข้อมูลและเหมืองข้อมูล การออกแบบและพัฒนาเว็บแอปพลิเคชัน ระบบปฏิบัติการ และสถาปัตยกรรมและการจัดองค์ประกอบคอมพิวเตอร์"
 };
