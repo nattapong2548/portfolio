@@ -153,3 +153,24 @@ html.motion-paused { scroll-behavior:auto; }
 @media(max-width:760px) { .chapter-rail { left:1px; width:13px; } .chapter-track { left:6px; } .chapter-stop { font-size:7px; } .scroll-motion-ready .scroll-reveal { transform:translateY(18px); } }
 @media(prefers-reduced-motion:reduce) { .scroll-reveal { opacity:1!important; transform:none!important; animation:none!important; } .chapter-rail { display:none; } }
 @media print { .scroll-reveal { opacity:1!important; transform:none!important; } .chapter-rail { display:none; } }
+
+.featured-project { grid-column:1/-1; padding:clamp(24px,4vw,52px); background:linear-gradient(135deg,#10232b,#0d151e 65%); }
+.featured-project .featured-label { color:var(--accent); font:11px/1.8 var(--mono); letter-spacing:1.3px; min-height:0; margin:0 0 26px; }
+.featured-project h3 { font-size:clamp(32px,4vw,48px); }
+.featured-project .project-short { min-height:0; font-size:20px; margin:12px 0 18px; }
+.featured-project>p:not(.project-short):not(.project-status) { min-height:0; max-width:760px; }
+.project-actions { display:flex; flex-wrap:wrap; gap:12px; margin:26px 0 8px; }
+.featured-project .repo-access { font-size:12px!important; color:var(--muted); }
+.case-story { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin:36px 0; border-top:1px solid var(--line); padding-top:28px; }
+.case-step { font:12px var(--mono); color:var(--accent); }
+.case-story h4,.case-debug h4 { font-size:19px; font-weight:500; line-height:1.5; margin:14px 0 12px; }
+.case-story p,.case-debug p { font-size:15px; color:var(--muted); margin:0; }
+.case-debug { border-left:2px solid var(--accent); padding:4px 0 4px 22px; margin-bottom:28px; max-width:900px; }
+.case-debug h4 { margin-top:0; }
+.case-debug p:first-of-type { color:var(--text); margin-bottom:12px; }
+.featured-project .tags { min-height:0; }
+@media(max-width:760px) { .case-story { grid-template-columns:1fr; gap:24px; } .featured-project .project-short { font-size:18px; } .featured-project { padding:24px; } }
+.case-evidence { padding:0; list-style:none; display:grid; gap:16px; margin:24px 0 0; }
+.case-evidence li { border-top:1px solid var(--line); padding-top:14px; }
+.case-evidence strong { display:block; font-size:14px; font-weight:500; color:var(--accent); }
+.case-evidence span { display:block; font-size:14px; color:var(--muted); margin-top:4px; }

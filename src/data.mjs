@@ -27,11 +27,11 @@ export const projects = [
     "number": "01",
     "category": "FULL-STACK WEB APPLICATION",
     "name": "My Payment Pro",
-    "short": "Personal expenses, clearly organized.",
-    "description": "A personal expense manager built with Next.js, TypeScript, and Supabase. Track spending, attach receipts, extract receipt data with OCR, and explore a dashboard with monthly PDF reports and expiring share links. Responsive design with account-based data access.",
-    "purpose": "Help users review past expenses and understand spending habits by bringing records, categories, receipts, and reports into one place.",
-    "solution": "A full-stack personal expense application with a simple desktop and mobile interface, light and dark modes, and data access scoped to each account.",
-    "status": "Personal full-stack project",
+    "short": "A real household problem, turned into a personal tool.",
+    "description": "I designed My Payment Pro to keep household purchases and reimbursement requests in one place, instead of relying on memory and scattered messages.",
+    "purpose": "I buy household supplies each month, but often forget to request reimbursement. For small purchases, sending another message each time also felt inconvenient.",
+    "solution": "My idea was to record what I bought, what it was for, and how much I spent, then review everything together in a monthly summary.",
+    "status": "System concept, requirements & hands-on testing · Claude-assisted coding",
     "stack": [
       "Next.js 15",
       "TypeScript",
@@ -67,10 +67,26 @@ export const projects = [
       "Tesseract.js",
       "html2canvas / jsPDF"
     ],
-    "learning": "Demonstrates full-stack development across UI design, relational data, authentication and access control, charting, receipt OCR, and reports for use outside the application.",
-    "pending": "Live demo URL has not yet been provided.",
+    "learning": "I learned that generating code is only the starting point. I spent weeks testing and working through receipt-upload failures, unresponsive buttons, slow pages, and layouts that did not work on mobile.",
+    "pending": null,
     "repo": "https://github.com/nattapong2548/my-payment-pro",
-    "demo": null
+    "demo": "https://my-payment-pro-lac.vercel.app/",
+    "role": "I defined the overall system concept and how I wanted to use it. Claude helped write the code; I tested the application and worked through bugs over several weeks.",
+    "process": [
+      {
+        "title": "Start with my own problem",
+        "text": "I buy household supplies each month, but often forget to request reimbursement. For small purchases, sending another message each time also felt inconvenient."
+      },
+      {
+        "title": "Define the workflow",
+        "text": "My idea was to record what I bought, what it was for, and how much I spent, then review everything together in a monthly summary."
+      },
+      {
+        "title": "Build with AI, then test",
+        "text": "I defined the overall system concept and how I wanted to use it. Claude helped write the code; I tested the application and worked through bugs over several weeks."
+      }
+    ],
+    "debugging": "Receipt uploads · Button interactions · Page speed · Mobile usability"
   },
   {
     "id": "automation",
