@@ -120,3 +120,88 @@ const TRANSLATIONS = {"Project links":"ลิงก์ผลงาน","Reposito
   try { pause.checked = localStorage.getItem('portfolio.pause') === 'true'; } catch { /* Default animation. */ }
   pause.addEventListener('change', () => { try { localStorage.setItem('portfolio.pause', String(pause.checked)); } catch { /* Optional preference. */ } });
 })();
+
+// Scroll storytelling: progressive enhancement; content stays visible without JS.
+(() => {
+  const root = document.documentElement;
+  const pause = document.querySelector('#pause-motion');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const sections = [...document.querySelectorAll('main > section:not(.hero)')];
+  const targets = [];
+  const add = (el, delay = 0) => {
+    el.classList.add('scroll-reveal');
+    el.style.setProperty('--reveal-delay', `${delay}ms`);
+    targets.push(el);
+  };
+  sections.forEach(section => {
+    const index = section.querySelector('.section-index');
+    if (index) add(index);
+    const heading = section.querySelector('h2');
+    if (heading) {
+      let line = document.createElement('span');
+      line.className = 'heading-line';
+      const lines = [line];
+      [...heading.childNodes].forEach(node => {
+        if (node.nodeName === 'BR') {
+          node.remove();
+          line = document.createElement('span');
+          line.className = 'heading-line';
+          lines.push(line);
+        } else line.append(node);
+      });
+      lines.forEach((item, i) => { heading.append(item); add(item, 100 + i * 100); });
+    }
+    section.querySelectorAll('.section-head > p, .about-text, .education-grid, .contact-links').forEach(el => add(el, 220));
+    section.querySelectorAll('.skill-row').forEach((el, i) => add(el, i * 100));
+    section.querySelectorAll('.project-card').forEach((el, i) => add(el, i * 110));
+  });
+  const rail = document.createElement('div');
+  rail.className = 'chapter-rail';
+  rail.setAttribute('aria-hidden', 'true');
+  rail.innerHTML = '<div class="chapter-track"><div class="chapter-fill"></div></div>' + sections.map((_, i) => `<span class="chapter-stop">0${i + 1}</span>`).join('');
+  document.body.append(rail);
+  const stops = [...rail.querySelectorAll('.chapter-stop')];
+  let observer;
+  let frame = 0;
+  const disabled = () => pause.checked || reduced.matches;
+  function updateRail() {
+    frame = 0;
+    if (disabled()) return;
+    const positions = sections.map(s => s.getBoundingClientRect().top + scrollY);
+    const cursor = scrollY + innerHeight * .55;
+    let segment = 0;
+    while (segment < positions.length - 2 && cursor > positions[segment + 1]) segment++;
+    const fraction = Math.max(0, Math.min(1, (cursor - positions[segment]) / Math.max(1, positions[segment + 1] - positions[segment])));
+    const progress = (segment + fraction) / (positions.length - 1);
+    rail.style.setProperty('--chapter-progress', progress);
+    stops.forEach((stop, i) => stop.classList.toggle('is-passed', cursor >= positions[i]));
+  }
+  function schedule() { if (!frame && !disabled()) frame = requestAnimationFrame(updateRail); }
+  function sync() {
+    observer?.disconnect();
+    root.classList.toggle('motion-paused', disabled());
+    if (disabled()) {
+      targets.forEach(el => el.classList.add('is-revealed'));
+      return;
+    }
+    if (!('IntersectionObserver' in window)) return;
+    observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
+      }
+    }), { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+    targets.filter(el => !el.classList.contains('is-revealed')).forEach(el => observer.observe(el));
+    root.classList.add('scroll-motion-ready');
+    schedule();
+  }
+  document.addEventListener('focusin', event => {
+    event.target.closest('.scroll-reveal')?.classList.add('is-revealed');
+  });
+  addEventListener('scroll', schedule, { passive: true });
+  addEventListener('resize', schedule);
+  new ResizeObserver(schedule).observe(document.querySelector('main'));
+  pause.addEventListener('change', sync);
+  reduced.addEventListener('change', sync);
+  sync();
+})();

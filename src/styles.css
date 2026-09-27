@@ -130,3 +130,26 @@ html[lang="th"] .project-short { line-height: 1.8; }
   .cyber-rain, .cyber-sparks, .motion-control { display: none; }
 }
 @media(min-width:761px) and (max-width:1050px){.project-grid{grid-template-columns:1fr 1fr}.section-head{gap:35px}.section-head>p{max-width:285px}}
+
+/* Chapter reveals preserve natural scrolling and the bilingual text nodes. */
+.heading-line { display:block; }
+.scroll-motion-ready .scroll-reveal {
+  opacity:0; transform:translateY(28px);
+  transition:opacity .7s ease, transform .8s cubic-bezier(.16,1,.3,1);
+  transition-delay:var(--reveal-delay,0ms);
+}
+.scroll-motion-ready .project-card.scroll-reveal { transform:translateY(36px) scale(.96); }
+.scroll-motion-ready .scroll-reveal.is-revealed { opacity:1; transform:none; }
+.scroll-motion-ready .skill-row.is-revealed { animation:skill-arrive 1.2s ease both; animation-delay:var(--reveal-delay); }
+@keyframes skill-arrive { 0% { border-color:var(--accent); background:#5ce5da14; } 100% { border-color:var(--line); background:transparent; } }
+.chapter-rail { position:fixed; left:1.7%; top:32%; height:36vh; width:22px; z-index:5; display:flex; flex-direction:column; justify-content:space-between; pointer-events:none; }
+.chapter-track { position:absolute; top:8px; bottom:8px; left:10px; width:1px; background:#29404a; }
+.chapter-fill { height:100%; background:var(--accent); transform:scaleY(var(--chapter-progress,0)); transform-origin:top; box-shadow:0 0 10px #5ce5da80; }
+.chapter-stop { position:relative; text-align:center; font:10px/20px var(--mono); background:var(--bg); color:#83949f; transition:color .3s; }
+.chapter-stop.is-passed { color:var(--accent); }
+html.motion-paused { scroll-behavior:auto; }
+.motion-paused .scroll-reveal { opacity:1!important; transform:none!important; transition:none!important; animation:none!important; }
+.motion-paused .chapter-rail { display:none; }
+@media(max-width:760px) { .chapter-rail { left:1px; width:13px; } .chapter-track { left:6px; } .chapter-stop { font-size:7px; } .scroll-motion-ready .scroll-reveal { transform:translateY(18px); } }
+@media(prefers-reduced-motion:reduce) { .scroll-reveal { opacity:1!important; transform:none!important; animation:none!important; } .chapter-rail { display:none; } }
+@media print { .scroll-reveal { opacity:1!important; transform:none!important; } .chapter-rail { display:none; } }
