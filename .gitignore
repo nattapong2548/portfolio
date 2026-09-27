@@ -1,0 +1,7 @@
+node_modules/
+tests/artifacts/
+.sites-runtime/
+*.log
+.env
+.env.*
+!.env.example

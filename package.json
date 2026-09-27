@@ -1,0 +1,11 @@
+{
+  "name": "nattapong-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node server.cjs",
+    "start": "node server.cjs",
+    "test:e2e": "node tests/portfolio.cjs"
+  }
+}

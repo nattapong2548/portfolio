@@ -1,0 +1,24 @@
+import { mkdirSync, writeFileSync, copyFileSync, existsSync, readFileSync } from 'node:fs';
+import { enhancePage } from './src/enhancements.mjs';
+import { translations } from './src/translations.mjs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+import { navigation, hero, about, skillsSection, projectsSection, education, contact, footer } from './src/components.mjs';
+const root=dirname(fileURLToPath(import.meta.url));
+const out=join(root,'dist');
+mkdirSync(out,{recursive:true});
+const title='Nattapong Seebudda — Computer Engineering Portfolio';
+const description='Third-year Computer Engineering / IoT student exploring software development, systems, and AI. Personal projects, technical foundations, and internship interests.';
+const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070c12"><title>${title}</title><meta name="description" content="${description}"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23070c12'/%3E%3Ctext x='8' y='43' font-family='Arial' font-size='30' font-weight='bold' fill='%235ce5da'%3ENS%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>${navigation()}<main id="main">${hero()}${about()}${skillsSection()}${projectsSection()}${education()}${contact()}</main>${footer()}</body></html>`;
+const rendered = enhancePage(html);
+writeFileSync(join(out,'index.html'),rendered);
+writeFileSync(join(out,'app.js'), `const TRANSLATIONS = ${JSON.stringify(translations)};\n` + readFileSync(join(root,'src/app.js'),'utf8'));
+copyFileSync(join(root,'src/styles.css'),join(out,'style.css'));
+if(existsSync(join(root,'public/hero.webp')))copyFileSync(join(root,'public/hero.webp'),join(out,'hero.webp'));
+copyFileSync(join(root,'public/nattapong-resume.pdf'),join(out,'nattapong-resume.pdf'));
+// Verify generated document structure and internal destinations without browser JS.
+const ids=[...rendered.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
+if(new Set(ids).size!==ids.length)throw new Error('Duplicate document IDs');
+for(const [,id] of rendered.matchAll(/href="#([^"]+)"/g))if(!ids.includes(id))throw new Error(`Missing anchor: ${id}`);
+if((rendered.match(/<h1\b/g)||[]).length!==1)throw new Error('Expected one primary heading');
+console.log('Built static portfolio. Internal links, unique IDs, and primary heading validated.');

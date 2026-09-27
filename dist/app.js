@@ -1,0 +1,122 @@
+const TRANSLATIONS = {"Project links":"ลิงก์ผลงาน","Repository":"ซอร์สโค้ด","Live demo":"เว็บตัวอย่าง","Facebook page":"เพจ Facebook","Live demo URL has not yet been provided.":"ยังไม่ได้ระบุลิงก์เว็บตัวอย่าง","Skip to content":"ข้ามไปยังเนื้อหา","About":"เกี่ยวกับผม","Skills":"ทักษะ","Projects":"ผลงาน","Education":"การศึกษา","Let’s connect":"ติดต่อกัน","Pause motion":"หยุดภาพเคลื่อนไหว","Computer Engineering student.":"นักศึกษาวิศวกรรมคอมพิวเตอร์","Building toward what’s next.":"เรียนรู้และสร้างสิ่งใหม่ไปข้างหน้า","I connect a foundation in computer engineering with hands-on web projects and a curiosity for AI. Now preparing for a Software Engineering Internship.":"ผมนำพื้นฐานวิศวกรรมคอมพิวเตอร์มาลงมือทำเว็บและเรียนรู้ AI ขณะนี้กำลังเตรียมตัวสมัครฝึกงานด้าน Software Engineering","Explore my projects":"ดูผลงานของผม","Get to know me":"รู้จักผมเพิ่มเติม","SCROLL TO EXPLORE":"เลื่อนเพื่อสำรวจ","Curiosity, translated":"เปลี่ยนความสงสัย","into":"ให้เป็น","software.":"ซอฟต์แวร์","I’m a third-year Computer Engineering / IoT student at Rajamangala University of Technology Krungthep. I enjoy breaking problems into smaller parts, learning new technologies, and turning ideas into software projects.":"ผมเป็นนักศึกษาปี 3 สาย Computer Engineering / IoT ที่มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ ชอบแยกปัญหาเป็นส่วนย่อย เรียนรู้เทคโนโลยีใหม่ และลงมือเปลี่ยนไอเดียให้เป็นโปรเจกต์ซอฟต์แวร์","My current direction is software development, systems, and practical applications of AI. I’m also interested in AI/ML infrastructure and continuing my studies in Computer Science, IT, or Data Science.":"ผมสนใจการพัฒนาซอฟต์แวร์ ระบบ และการนำ AI มาใช้จริง รวมถึงโครงสร้างพื้นฐาน AI/ML และการศึกษาต่อด้าน Computer Science, IT หรือ Data Science","Systematic thinking":"คิดอย่างเป็นระบบ","Problem solving":"แก้ปัญหา","Adaptability":"ปรับตัว","Self-directed learning":"เรียนรู้ด้วยตนเอง","EDUCATION AT A GLANCE":"การศึกษาโดยสรุป","Computer Engineering":"วิศวกรรมคอมพิวเตอร์","/ Internet of Things":"/ อินเทอร์เน็ตของสรรพสิ่ง","Year 3":"ปี 3","Current study year":"ชั้นปีปัจจุบัน","GPA · user-provided":"GPA · ข้อมูลจากผู้ใช้","Your photo belongs here":"พื้นที่สำหรับรูปของคุณ","Choose profile photo":"เลือกรูปโปรไฟล์","Remove photo":"ลบรูป","Local preview only · JPG, PNG or WebP · max 3 MB":"พรีวิวในเครื่อง · JPG, PNG หรือ WebP · ไม่เกิน 3 MB","Saved only in this browser. Visitors won’t see this photo until it is added to the website files.":"บันทึกเฉพาะเบราว์เซอร์นี้ ผู้เข้าชมคนอื่นจะยังไม่เห็นรูปจนกว่าจะเพิ่มรูปลงในไฟล์เว็บไซต์","My working":"เครื่องมือ","toolkit.":"ที่ผมใช้","Tools I’ve used, foundations I’m studying, and areas I want to explore.":"เครื่องมือที่เคยใช้ พื้นฐานที่กำลังศึกษา และเรื่องที่อยากเรียนรู้เพิ่มเติม","Web development":"พัฒนาเว็บไซต์","Used in personal projects":"ใช้ในโปรเจกต์ส่วนตัว","Data & workflow":"ข้อมูลและกระบวนการทำงาน","Project experience":"ประสบการณ์จากโปรเจกต์","Engineering foundations":"พื้นฐานวิศวกรรม","Academic coursework & assignments":"รายวิชาและงานที่ศึกษา","Exploring next":"สิ่งที่สนใจต่อไป","Areas of interest":"ด้านที่สนใจ","Skills are grouped by evidence of use. Proficiency levels:":"จัดกลุ่มตามประสบการณ์ใช้งาน ส่วนระดับความชำนาญ:","Ideas. Experiments.":"ไอเดียและการทดลอง","Things I’ve worked on.":"สิ่งที่ผมได้ลงมือทำ","A selection of personal projects and explorations. Open the notes for scope, technology, and what still needs confirmation.":"โปรเจกต์ส่วนตัวและสิ่งที่ได้ทดลอง เปิดรายละเอียดเพื่อดูขอบเขต เทคโนโลยี และข้อมูลที่ยังต้องยืนยัน","All projects":"ผลงานทั้งหมด","Frontend":"Frontend","Full-stack":"Full-stack","AI & workflows":"AI และเวิร์กโฟลว์","Search projects":"ค้นหาผลงาน","No matching projects":"ไม่พบผลงานที่ตรงกัน","Try another keyword or reset your filters.":"ลองคำค้นอื่นหรือล้างตัวกรอง","Reset filters":"ล้างตัวกรอง","Project notes":"รายละเอียดโปรเจกต์","Problem / purpose":"ปัญหา / จุดประสงค์","Solution":"แนวทางแก้ปัญหา","Features / exploration":"ฟีเจอร์ / สิ่งที่ทดลอง","Learning & practice":"การเรียนรู้และฝึกฝน","Awaiting confirmation":"ข้อมูลที่รอยืนยัน","Repository / live demo":"ซอร์สโค้ด / เว็บตัวอย่าง","From curiosity to a repeatable process.":"จากความสงสัยสู่กระบวนการที่ทำซ้ำได้","A knowledge-sharing content page using AI-assisted content creation, with an interest in building a more systematic workflow.":"เพจแบ่งปันความรู้ที่ใช้ AI ช่วยสร้างคอนเทนต์ และสนใจพัฒนากระบวนการทำงานให้เป็นระบบ","Content activity / pipeline concept":"กิจกรรมสร้างคอนเทนต์ / แนวคิด Pipeline","Explore ways to create general-knowledge content and organize a repeatable production process.":"ทดลองสร้างคอนเทนต์ความรู้ทั่วไปและจัดกระบวนการผลิตให้ทำซ้ำได้","Hands-on content creation supported by AI tools, with a proposed end-to-end automation pipeline.":"ลงมือสร้างคอนเทนต์ด้วยเครื่องมือ AI พร้อมแนวคิด Pipeline อัตโนมัติตั้งแต่ต้นจนจบ","Experience creating content for a knowledge-sharing page":"ประสบการณ์สร้างคอนเทนต์ให้เพจแบ่งปันความรู้","AI-assisted content creation":"สร้างคอนเทนต์โดยใช้ AI ช่วย","Proposed pipeline: idea → research → script → AI generation → processing → publishing":"Pipeline ที่เสนอ: ไอเดีย → ค้นคว้า → สคริปต์ → สร้างด้วย AI → ประมวลผล → เผยแพร่","Practice areas: content workflows, AI tools, and process design. Specific tools, implementation details, and outcomes have not yet been confirmed.":"ด้านที่ได้ฝึก: เวิร์กโฟลว์คอนเทนต์ เครื่องมือ AI และการออกแบบกระบวนการ เครื่องมือเฉพาะ รายละเอียดและผลลัพธ์ยังไม่ได้รับการยืนยัน","A working automated publishing pipeline, tool names, dates, and measured outcomes have not been confirmed.":"Pipeline เผยแพร่อัตโนมัติที่ทำงานจริง ชื่อเครื่องมือ วันที่ และผลลัพธ์ที่วัดได้ ข้อมูลยังไม่ได้รับการยืนยัน","The engineering":"รากฐาน","foundation.":"ทางวิศวกรรม","CURRENT EDUCATION":"การศึกษาปัจจุบัน","Third-year Computer Engineering / IoT student":"นักศึกษาชั้นปีที่ 3 สายวิศวกรรมคอมพิวเตอร์ / IoT","Attendance dates and expected graduation:":"ช่วงเวลาศึกษาและกำหนดจบ:","Learning across disciplines":"เรียนรู้หลายศาสตร์","Beyond coursework":"นอกเหนือจากรายวิชา","Looking ahead":"เป้าหมายข้างหน้า","Coursework and assignments in software engineering, computer architecture, digital image processing, programming, Arduino / IoT, calculus, and physics.":"รายวิชาและงานด้านวิศวกรรมซอฟต์แวร์ สถาปัตยกรรมคอมพิวเตอร์ การประมวลผลภาพ การเขียนโปรแกรม Arduino / IoT แคลคูลัส และฟิสิกส์","Personal web projects and AI-assisted content creation for “มีไรจะบอก” provide opportunities to explore technology through practice.":"โปรเจกต์เว็บส่วนตัวและการใช้ AI ช่วยทำคอนเทนต์ให้เพจ “มีไรจะบอก” เป็นโอกาสเรียนรู้เทคโนโลยีผ่านการลงมือทำ","Interested in postgraduate study in Computer Science, IT, or Data Science, including programs connected with King Mongkut’s University of Technology North Bangkok. This is an interest, not an admission or enrollment claim.":"สนใจศึกษาต่อด้าน Computer Science, IT หรือ Data Science โดยเฉพาะหลักสูตรที่เกี่ยวข้องกับมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เป็นความสนใจ ยังไม่ได้กล่าวอ้างว่าได้รับการตอบรับหรือเข้าเรียน","Let’s build":"มาร่วมสร้าง","what’s next.":"สิ่งใหม่ด้วยกัน","Preparing for Software Engineering Internship opportunities.":"กำลังเตรียมตัวสำหรับโอกาสฝึกงานด้าน Software Engineering","Interested in software development, systems, and practical AI.":"สนใจการพัฒนาซอฟต์แวร์ ระบบ และการใช้ AI ในงานจริง","Back to top":"กลับด้านบน","FULL-STACK WEB APPLICATION":"เว็บแอปพลิเคชัน FULL-STACK","Personal expenses, clearly organized.":"จัดการรายจ่ายส่วนบุคคลอย่างเป็นระบบ","A personal expense manager built with Next.js, TypeScript, and Supabase. Track spending, attach receipts, extract receipt data with OCR, and explore a dashboard with monthly PDF reports and expiring share links. Responsive design with account-based data access.":"พัฒนาเว็บจัดการรายจ่ายส่วนบุคคลด้วย Next.js, TypeScript และ Supabase รองรับบันทึกรายจ่าย แนบใบเสร็จ อ่านข้อมูลด้วย OCR และดูสถิติผ่าน Dashboard พร้อมรายงานรายเดือน ส่งออก PDF และแชร์ผ่านลิงก์ที่กำหนดวันหมดอายุได้ รองรับมือถือและแยกสิทธิ์ข้อมูลตามบัญชีผู้ใช้","Help users review past expenses and understand spending habits by bringing records, categories, receipts, and reports into one place.":"ช่วยให้ผู้ใช้ตรวจสอบค่าใช้จ่ายย้อนหลังและเข้าใจพฤติกรรมการใช้เงิน โดยรวมรายการ หมวดหมู่ ใบเสร็จ และรายงานไว้ในระบบเดียว","A full-stack personal expense application with a simple desktop and mobile interface, light and dark modes, and data access scoped to each account.":"เว็บแอปพลิเคชันจัดการรายจ่ายแบบ Full-stack หน้าจอเรียบง่าย รองรับคอมพิวเตอร์และมือถือ มีโหมดสว่างและมืด พร้อมแยกสิทธิ์เข้าถึงข้อมูลตามบัญชี","Personal full-stack project":"โปรเจกต์ส่วนตัวแบบ Full-stack","Sign up and sign in with Supabase Auth; expense data is separated by user account.":"สมัครสมาชิกและเข้าสู่ระบบด้วย Supabase Auth โดยแยกข้อมูลรายจ่ายตามบัญชีผู้ใช้","Create, edit, delete, and view expenses with dates, amounts, categories, and receipt images.":"เพิ่ม แก้ไข ลบ และดูรายละเอียดรายจ่าย พร้อมวันที่ จำนวนเงิน หมวดหมู่ และภาพใบเสร็จ","Search, filter by category, date range, and amount, then sort and paginate results.":"ค้นหา กรองตามหมวดหมู่ ช่วงวันที่ และจำนวนเงิน พร้อมเรียงลำดับและแบ่งหน้า","Organize parent and child categories with custom colors and icons.":"จัดการหมวดหมู่หลักและหมวดหมู่ย่อย พร้อมกำหนดสีและไอคอน","Dashboard with total spending, transaction counts, daily averages, trends, category breakdowns, and changes against a comparison period.":"Dashboard แสดงยอดใช้จ่าย จำนวนรายการ ค่าเฉลี่ยรายวัน กราฟแนวโน้ม สัดส่วนตามหมวดหมู่ และการเปลี่ยนแปลงจากช่วงเวลาเปรียบเทียบ","Expense calendar with daily totals and a list of expenses for the selected day.":"ปฏิทินแสดงยอดรายจ่ายแต่ละวัน พร้อมเปิดดูรายการของวันที่เลือก","Monthly reports with totals, category summaries, and expense details; export to PDF or print.":"รายงานรายเดือนสรุปยอดรวม รายจ่ายตามหมวดหมู่ และรายละเอียดรายการ พร้อมส่งออก PDF และสั่งพิมพ์","Read-only report links with expiration dates, revocation, and optional receipt access.":"แชร์รายงานผ่านลิงก์สำหรับดูอย่างเดียว กำหนดวันหมดอายุ ยกเลิกลิงก์ และเลือกอนุญาตให้ดูใบเสร็จได้","Tesseract.js OCR helps fill merchant names, dates, and totals, with keyword-based category suggestions. The current configuration focuses on English text.":"ใช้ Tesseract.js อ่านใบเสร็จเพื่อช่วยกรอกชื่อร้าน วันที่ และยอดเงิน พร้อมแนะนำหมวดหมู่จากคำสำคัญ โดยการตั้งค่าปัจจุบันเน้นข้อความภาษาอังกฤษ","Next.js App Router separates member pages, expense management, and APIs, using Server and Client Components as appropriate.":"ใช้ Next.js App Router แยกหน้าสมาชิก หน้าจัดการข้อมูล และ API พร้อมเลือกใช้ Server Components และ Client Components ตามลักษณะงาน","Relational expense, user, and category data with parent/child categories; Row Level Security (RLS) restricts expenses and categories to their owners.":"ออกแบบความสัมพันธ์ระหว่างรายจ่าย ผู้ใช้ และหมวดหมู่ รวมถึงหมวดหมู่หลักและย่อย พร้อมใช้ Row Level Security (RLS) จำกัดข้อมูลรายจ่ายและหมวดหมู่ตามเจ้าของ","Zod validates forms, and receipt uploads check file type and size.":"ตรวจสอบข้อมูลฟอร์มด้วย Zod และตรวจสอบประเภทกับขนาดไฟล์ก่อนอัปโหลดใบเสร็จ","OCR image reading, receipt-text parsing, and category suggestions are separate modules.":"แยกส่วนอ่านภาพ OCR การแปลงข้อความเป็นข้อมูลใบเสร็จ และการแนะนำหมวดหมู่ออกจากกันเพื่อให้ปรับปรุงได้ง่าย","Dashboard calculations are separated from the UI and handle zero comparison baselines and month boundaries.":"แยกตรรกะคำนวณ Dashboard ออกจากหน้าจอ พร้อมจัดการฐานเปรียบเทียบที่เป็นศูนย์และขอบเขตวันที่ของแต่ละเดือน","Reusable buttons, forms, tables, confirmation dialogs, and loading states keep the interface consistent.":"สร้างปุ่ม ฟอร์ม ตาราง กล่องยืนยัน และสถานะระหว่างโหลดข้อมูลเป็น UI Components ที่ใช้ซ้ำได้","Demonstrates full-stack development across UI design, relational data, authentication and access control, charting, receipt OCR, and reports for use outside the application.":"แสดงทักษะ Full-stack ตั้งแต่ออกแบบหน้าจอ ฐานข้อมูล ระบบยืนยันตัวตนและสิทธิ์เข้าถึง ไปจนถึงกราฟ การอ่านใบเสร็จด้วย OCR และการสร้างรายงานเพื่อใช้งานภายนอกระบบ","Repository URL and live demo URL have not yet been provided.":"ยังไม่ได้ระบุลิงก์ซอร์สโค้ดและเว็บตัวอย่าง","Technical implementation":"รายละเอียดการพัฒนาเชิงเทคนิค","Technology stack":"เทคโนโลยีที่ใช้"};
+(() => {
+  'use strict';
+  const $ = selector => document.querySelector(selector);
+  const cards = [...document.querySelectorAll('.project-card')];
+  let filter = 'all';
+  let language = 'en';
+  const text = (en, th) => language === 'th' ? th : en;
+  const photoKey = 'nattapong.profile-preview.v1';
+  const input = $('#photo-input');
+  const photo = $('#profile-photo');
+  const message = $('#photo-message');
+  let photoRequest = 0;
+
+  function showPhoto(url) {
+    photo.src = url;
+    photo.hidden = false;
+    $('#portrait-placeholder').hidden = true;
+    $('#remove-photo').hidden = false;
+  }
+  $('.photo-editor').hidden = false;
+  try {
+    const stored = localStorage.getItem(photoKey);
+    if (stored && /^data:image\/(png|jpeg|webp);base64,/.test(stored)) showPhoto(stored);
+  } catch { /* Browser storage is optional. */ }
+
+  input.addEventListener('change', async () => {
+    const file = input.files[0];
+    if (!file) return;
+    const request = ++photoRequest;
+    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type) || file.size > 3 * 1024 * 1024) {
+      message.textContent = text('Choose a JPG, PNG or WebP image under 3 MB.', 'กรุณาเลือกรูป JPG, PNG หรือ WebP ขนาดไม่เกิน 3 MB');
+      input.value = '';
+      return;
+    }
+    try {
+      const url = await new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+      const image = new Image();
+      image.src = url;
+      await image.decode();
+      if (request !== photoRequest) return;
+      showPhoto(url);
+      try {
+        localStorage.setItem(photoKey, url);
+        message.textContent = text('Photo saved in this browser only.', 'บันทึกรูปไว้ในเบราว์เซอร์นี้เท่านั้น');
+      } catch {
+        message.textContent = text('Photo preview ready. Browser storage is unavailable; it will reset on reload.', 'แสดงตัวอย่างแล้ว แต่บันทึกในเบราว์เซอร์ไม่ได้ รูปจะหายเมื่อรีโหลด');
+      }
+    } catch {
+      message.textContent = text('This image could not be opened. Please try another file.', 'เปิดรูปนี้ไม่ได้ กรุณาเลือกไฟล์อื่น');
+    }
+    input.value = '';
+  });
+  $('#remove-photo').addEventListener('click', () => {
+    ++photoRequest;
+    try { localStorage.removeItem(photoKey); } catch { /* Still clear the visible preview. */ }
+    photo.hidden = true;
+    photo.removeAttribute('src');
+    $('#portrait-placeholder').hidden = false;
+    $('#remove-photo').hidden = true;
+    message.textContent = text('Profile photo removed from this browser.', 'ลบรูปโปรไฟล์ออกจากเบราว์เซอร์นี้แล้ว');
+  });
+
+  function applyFilters() {
+    const query = $('#project-search').value.trim().toLocaleLowerCase();
+    let count = 0;
+    cards.forEach((card) => {
+      const matches = (filter === 'all' || card.dataset.project === filter) && card.textContent.toLocaleLowerCase().includes(query);
+      card.hidden = !matches;
+      if (matches) count++;
+    });
+    $('#project-count').textContent = text(`${count} of ${cards.length} projects`, `แสดง ${count} จาก ${cards.length} ผลงาน`);
+    $('#project-empty').hidden = count !== 0;
+  }
+  $('.project-tools').hidden = false;
+  document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
+    filter = button.dataset.filter;
+    document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+    applyFilters();
+  }));
+  $('#project-search').addEventListener('input', applyFilters);
+  $('#reset-filters').addEventListener('click', () => {
+    $('#project-search').value = '';
+    $('[data-filter="all"]').click();
+    $('#project-search').focus();
+  });
+  applyFilters();
+
+  // Translate visible text nodes, preserving native controls, focus, and disclosure state.
+  const translations = new Map(Object.entries(TRANSLATIONS));
+  const original = new Map();
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    if (['SCRIPT', 'STYLE'].includes(node.parentElement?.tagName)) continue;
+    const key = node.textContent.trim();
+    if (translations.has(key)) original.set(node, node.textContent);
+  }
+  const toggle = $('#language-toggle');
+  function setLanguage(next) {
+    language = next;
+    document.documentElement.lang = next;
+    original.forEach((value, node) => { node.textContent = next === 'th' ? value.replace(value.trim(), translations.get(value.trim())) : value; });
+    toggle.textContent = next === 'en' ? 'TH' : 'EN';
+    toggle.setAttribute('aria-label', next === 'en' ? 'Switch to Thai' : 'Switch to English');
+    $('#project-search').placeholder = text('Try Next.js or automation', 'ลองค้นหา Next.js หรือ automation');
+    applyFilters();
+    try { localStorage.setItem('portfolio.language', next); } catch { /* Optional preference. */ }
+  }
+  toggle.hidden = false;
+  toggle.addEventListener('click', () => setLanguage(language === 'en' ? 'th' : 'en'));
+  try { if (localStorage.getItem('portfolio.language') === 'th') setLanguage('th'); } catch { /* Default English. */ }
+
+  const pause = $('#pause-motion');
+  try { pause.checked = localStorage.getItem('portfolio.pause') === 'true'; } catch { /* Default animation. */ }
+  pause.addEventListener('change', () => { try { localStorage.setItem('portfolio.pause', String(pause.checked)); } catch { /* Optional preference. */ } });
+})();
